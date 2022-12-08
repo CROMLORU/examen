@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="402dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="9dp"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/id_resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ran1"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <Button
+        android:id="@+id/id_resultado"
+        android:layout_width="410dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="368dp"
+        android:gravity="center"
+        android:text="COMPROBAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number2" />
+
+    <TextView
+        android:id="@+id/ran1"
+        android:layout_width="417dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="43dp"
+        android:gravity="center"
+        android:text="PRESIONA START PARA COMENZAR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/number2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/id_refres"
+        android:layout_width="408dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="200dp"
+        android:gravity="center"
+        android:text="START"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_resultado"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
